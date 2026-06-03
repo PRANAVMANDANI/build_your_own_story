@@ -22,16 +22,13 @@ services:
   # 2. Vite React Frontend (Static Site)
   - type: web
     name: build-your-story-frontend
-    env: static
+    runtime: static
     rootDir: frontend
     buildCommand: "npm install && npm run build"
     staticPublishPath: dist
     envVars:
       - key: VITE_API_BASE_URL
-        fromService:
-          type: web
-          name: build-your-story-backend
-          property: host
+        value: "https://build-your-story-backend.onrender.com"
 
 databases:
   # 3. PostgreSQL Database
