@@ -20,7 +20,7 @@ services:
         value: "false"
 
   # 2. Vite React Frontend (Static Site)
-  - type: static
+  - type: web
     name: build-your-story-frontend
     env: static
     rootDir: frontend
