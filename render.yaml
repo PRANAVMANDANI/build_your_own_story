@@ -21,7 +21,7 @@ services:
 
   # 2. Vite React Frontend (Static Site)
   - type: web
-    name: build-your-story-frontend
+    name: build-your-story
     runtime: static
     rootDir: frontend
     buildCommand: "npm install && npm run build"
